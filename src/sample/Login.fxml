@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLogin">
+   <children>
+      <Button fx:id="registerButton" alignment="TOP_CENTER" layoutX="777.0" layoutY="32.0" mnemonicParsing="false" onAction="#registerPButton" prefHeight="29.0" prefWidth="92.0" style="-fx-background-color: #2D3447;" text="Zarejestruj się" textFill="#8a8a0d" />
+      <Label alignment="CENTER" layoutX="323.0" layoutY="23.0" prefHeight="76.0" prefWidth="255.0" text="Food Taxi" textFill="#3ea5dd">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameText" layoutX="299.0" layoutY="277.0" prefHeight="47.0" prefWidth="303.0" promptText="Użytkownik">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Button fx:id="registerButton1" alignment="TOP_LEFT" layoutX="404.0" layoutY="436.0" mnemonicParsing="false" onAction="#pressButton2" prefHeight="29.0" prefWidth="92.0" style="-fx-background-color: #2D3447;" text="Zaloguj się" textFill="#8a8a0d" />
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="338.0" layoutY="131.0" prefHeight="68.0" prefWidth="225.0" text="Logowanie" textFill="#e8e8e4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordText" layoutX="299.0" layoutY="353.0" prefHeight="47.0" prefWidth="303.0" promptText="Hasło">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></PasswordField>
+   </children>
+</AnchorPane>
