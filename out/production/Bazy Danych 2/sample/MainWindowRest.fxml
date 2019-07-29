@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerRest">
+    <children>
+        <Button fx:id="loginButton" layoutX="824.0" layoutY="22.0" mnemonicParsing="false" onAction="#registerPButton" style="-fx-background-color: #2D3447;" text="Wyloguj się" textFill="#8a8a0d" />
+        <Pane layoutX="182.0" layoutY="138.0" prefHeight="452.0" prefWidth="707.0" style="-fx-background-color: #607d8b;">
+         <children>
+            <TableView fx:id="tableView" prefHeight="452.0" prefWidth="707.0">
+              <columns>
+                <TableColumn fx:id="offerColumn" prefWidth="296.0" text="Nazwa dania" />
+                  <TableColumn fx:id="kitchenColumn" prefWidth="247.0" text="Rodzaj kuchni" />
+                  <TableColumn fx:id="priceColumn" prefWidth="163.0" text="Cena" />
+              </columns>
+            </TableView>
+         </children></Pane>
+        <Label layoutX="19.0" layoutY="165.0" text="Nazwa dania" textFill="WHITE" />
+        <TextField fx:id="NazwaDaniaText" layoutX="19.0" layoutY="186.0" prefHeight="31.0" prefWidth="136.0" promptText="Podaj Nazwe" />
+        <Label layoutX="22.0" layoutY="257.0" prefHeight="21.0" prefWidth="136.0" text="Rodzaj kuchni" textFill="WHITE" />
+        <ComboBox fx:id="RodzajKuchniCombo" layoutX="19.0" layoutY="278.0" prefHeight="31.0" prefWidth="136.0" />
+        <Label layoutX="19.0" layoutY="343.0" prefHeight="21.0" prefWidth="136.0" text="Cena" textAlignment="CENTER" textFill="WHITE" />
+        <ImageView fitHeight="152.0" fitWidth="168.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Logo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="67.0" layoutY="98.0" prefHeight="21.0" prefWidth="136.0" text="Food Taxi" textFill="WHITE" />
+      <TextField fx:id="priceText" layoutX="19.0" layoutY="364.0" prefHeight="31.0" prefWidth="136.0" promptText="Podaj cene" />
+      <Button layoutX="53.0" layoutY="448.0" mnemonicParsing="false" onAction="#dodajPButton" prefHeight="31.0" prefWidth="74.0" text="Dodaj" />
+      <ComboBox fx:id="choice" layoutX="376.0" layoutY="59.0" prefWidth="150.0" />
+      <Button layoutX="584.0" layoutY="48.0" mnemonicParsing="false" onAction="#pobierzDane" prefHeight="48.0" prefWidth="116.0" text="Pobierz Dane" />
+      <Button layoutX="53.0" layoutY="507.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="31.0" prefWidth="74.0" text="Usuń" />
+    </children>
+</AnchorPane>
